@@ -1,5 +1,7 @@
 Demonstrate an issue with `@rules_python//python/cc:current_py_cc_headers`
 
+https://github.com/bazelbuild/rules_python/issues/1669
+
 ```
 ❯ bazel test //...
 ERROR: /home/runner/.cache/bazel/_bazel_runner/65a3e927bb675b9662534e6979f57f3e/external/rules_python/python/cc/BUILD.bazel:14:22: While resolving toolchains for target @@rules_python//python/cc:current_py_cc_headers (5b7f3da): No matching toolchains found for types @@rules_python//python/cc:toolchain_type.
