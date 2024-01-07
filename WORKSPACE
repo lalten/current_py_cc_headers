@@ -15,3 +15,6 @@ python_register_toolchains(
     name = "rules_ros2_python",
     python_version = "3.10",
 )
+
+# Workaround until https://github.com/bazelbuild/rules_python/pull/1670 is released
+register_toolchains("@rules_ros2_python_toolchains//:x86_64-unknown-linux-gnu_py_cc_toolchain")
